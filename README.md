@@ -126,11 +126,11 @@ For detailed experimental results and further analysis, please refer to the full
 If you find this code useful in your research, please consider citing our work:
 
 ```bibtex
-@inproceedings{dwa2024neurips,
-    title={Diversity-Driven Synthesis: Enhancing Dataset Distillation through Directed Weight Adjustment},
-    author={Du, Jiawei and Zhang, Xin and Hu, Juncheng and Huang, Wenxin and Zhou, Joey Tianyi},
-    booktitle={Adv. Neural Inf. Process. Syst. (NeurIPS)},
-    year={2024}
+@inproceedings{ufc2025iclr,
+    title={Breaking Class Barriers: Efficient Dataset Distillation via Inter-Class Feature Compensator},
+    author={Zhang, Xin and Du, Jiawei, and Liu, Ping and Zhou, Joey Tianyi},
+    booktitle={Proc. Int. Conf. Learn. Represent. (ICLR)},
+    year={2025}
 }
 ```
 ---
