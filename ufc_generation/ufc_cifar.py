@@ -234,7 +234,6 @@ def get_args():
 if __name__ == "__main__":
 
     args = get_args()
-    args.milestone = 1
 
     if not wandb.api.api_key:
         wandb.login(key='')
