@@ -4,7 +4,7 @@
 >[Breaking Class Barriers: Efficient Dataset Distillation via Inter-Class Feature Compensator](https://arxiv.org/abs/2408.06927).<br>
 > [Xin Zhang](https://zhangxin-xd.github.io/), [Jiawei Du](https://scholar.google.com/citations?user=WrJKEzEAAAAJ&hl=zh-CN), [Ping Liu](https://pinglmlcv.github.io/pingliu264/), [Joey Tianyi Zhou](https://joeyzhouty.github.io/) <br>
 > Agency for Science, Technology, and Research (ASTAR), Singapore <br>
-> University of Nevada Reno
+> University of Nevada, Reno
 ## 📖 Introduction
 <p align="justify">
 Dataset distillation has emerged as a technique aiming to condense informative features from large, natural datasets into a compact and synthetic form. While recent advancements have refined this technique, its performance is bottlenecked by the prevailing class-specific synthesis paradigm. Under this paradigm, synthetic data is optimized exclusively for a pre-assigned one-hot label, creating an implicit class barrier in feature condensation. This leads to inefficient utilization of the distillation budget and oversight of inter-class feature distributions, which ultimately limits the effectiveness and efficiency, as demonstrated in our analysis.
