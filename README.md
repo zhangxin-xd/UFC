@@ -60,18 +60,17 @@ For ImageNet-1K, we use the pre-trained weights available in `torchvision`.  For
         --dataset imagenet
     ```
 - **Evaluation**:
-  
-    Cifar:
+  validation with static labeling
     ```bash
-    # validation with static labeling
     python ufc_validation/val_static.py \
         --epochs 400 --batch-size 64 --ipc 10 \
         --syn-data-path syn/cifar100-ipc10/generated_results \
         --output-dir syn/cifar100-ipc10/generated_results \
         --wandb-name cifar100-ipc10 \
         --dataset cifar100 --networks resnet18
-    
-    # validation with dynamic labeling
+    ```
+    validation with dynamic labeling
+  ```bash
     python ufc_validation/val_dyn.py \
         --epochs 80 --batch-size 64 --ipc 10 \
         --syn-data-path syn/cifar100-ipc10/generated_results\
