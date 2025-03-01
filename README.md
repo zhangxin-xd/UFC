@@ -3,7 +3,7 @@
 
 >[Breaking Class Barriers: \\Efficient Dataset Distillation via Inter-Class Feature Compensator](https://arxiv.org/abs/2408.06927).<br>
 > [Xin Zhang](https://zhangxin-xd.github.io/), [Jiawei Du](https://scholar.google.com/citations?user=WrJKEzEAAAAJ&hl=zh-CN), [Ping Liu](https://pinglmlcv.github.io/pingliu264/), [Joey Tianyi Zhou](https://joeyzhouty.github.io/) <br>
-> Agency for Science, Technology, and Research (ASTAR), Singapore
+> Agency for Science, Technology, and Research (ASTAR), Singapore <br>
 > University of Nevada Reno
 ## 📖 Introduction
 <p align="justify">
