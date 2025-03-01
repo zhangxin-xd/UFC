@@ -112,7 +112,8 @@ we also provide the `.sh` script in the `scripts` directory.
 
 Our experiments demonstrate the effectiveness of the proposed approach across various benchmarks. 
 
-![Results](./imgs/results.png)
+![Results](imgs/results1.png)
+![Results](imgs/results2.png)
 
 For detailed experimental results and further analysis, please refer to the full paper.
 
