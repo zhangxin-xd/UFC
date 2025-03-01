@@ -112,8 +112,10 @@ we also provide the `.sh` script in the `scripts` directory.
 
 Our experiments demonstrate the effectiveness of the proposed approach across various benchmarks. 
 
-<img src="imgs/results1.png" alt="Results" width="500"/>
-<img src="imgs/results2.png" alt="Results" width="500"/>
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="imgs/results1.png" alt="Results 1" width="400"/>
+    <img src="imgs/results2.png" alt="Results 2" width="400"/>
+</div>
 
 For detailed experimental results and further analysis, please refer to the full paper.
 
