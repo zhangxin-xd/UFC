@@ -60,6 +60,7 @@ Here’s how to use this code for UFC generation and validation:
         --dataset imagenet
     ```
 - **Evaluation**:
+  
   validation with static labeling
     ```bash
     python ufc_validation/val_static.py \
@@ -69,6 +70,7 @@ Here’s how to use this code for UFC generation and validation:
         --wandb-name cifar100-ipc10 \
         --dataset cifar100 --networks resnet18
     ```
+    
     validation with dynamic labeling
   ```bash
     python ufc_validation/val_dyn.py \
