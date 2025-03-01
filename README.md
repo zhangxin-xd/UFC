@@ -49,7 +49,15 @@ For ImageNet-1K, we use the pre-trained weights available in `torchvision`.  For
     ```
     ImageNet-1K:
     ```bash
-
+    python ufc_generation/ufc_imgnet.py \
+        --iteration 2000 --r-bn 0.01 --batch-size 1000 \
+        --lr 0.25 --ipc 10 \
+        --exp-name generated_results \
+        --wandb-name imagenet-ipc10 \
+        --store-best-images \
+        --syn-data-path syn/ \
+        --init_path init_images/imagenet/ \
+        --dataset imagenet
     ```
 - **Evaluation**:
   
