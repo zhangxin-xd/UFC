@@ -47,10 +47,6 @@ For ImageNet-1K, we use the pre-trained weights available in `torchvision`.  For
         --init_path init_images/c100/ \
         --dataset cifar100
     ```
-    Tiny-ImageNet:
-    ```bash
-
-    ```
     ImageNet-1K:
     ```bash
 
