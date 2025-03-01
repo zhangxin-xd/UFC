@@ -6,7 +6,7 @@
 > Agency for Science, Technology, and Research (ASTAR), Singapore <br>
 > University of Nevada, Reno
 ## 📖 Introduction
-![Pre-trained Models](./imgs/overview.png "Pre-trained Model Overview")
+![Pre-trained Models](imgs/overview.png "Pre-trained Model Overview")
 
 ---
 
