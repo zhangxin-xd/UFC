@@ -37,73 +37,45 @@ For ImageNet-1K, we use the pre-trained weights available in `torchvision`.  For
 
     Cifar:
     ```bash
-    python distillation/distillation_cifar.py 
-        --iteration 1000 --r-bn 0.01 --batch-size 100 --lr 0.25 
-        --exp-name distillation-c100-ipc50 
-        --store-best-images 
-        --syn-data-path ./syn_data/ 
-        --init_path ./distillation/init_images/cifar100 
-        --steps 12 --rho 15e-3 --ipc-start 0 --ipc-end 50 --r-var 11 
-        --dataset cifar100 
+    python ufc_generation/ufc_cifar.py \
+        --iteration 1000 --r-bn 1 --batch-size 100 \
+        --lr 0.25 --ipc 10 \
+        --exp-name generated_results \
+        --wandb-name cifar100-ipc10 \
+        --store-best-images \
+        --syn-data-path syn/ \
+        --init_path init_images/c100/ \
+        --dataset cifar100
     ```
     Tiny-ImageNet:
     ```bash
-    python distillation/distillation_tiny.py 
-         --iteration 2000 --r-bn 0.01 --batch-size 200 --lr 0.1 
-         --exp-name distillation-tiny-ipc50 
-         --store-best-images 
-         --syn-data-path ./syn_data/ 
-         --init-path ./distillation/init_images/tiny 
-         --steps 12 --rho 15e-3 --ipc-start 0 --ipc-end 50 --r-var 11 
-         --dataset tiny 
+
     ```
     ImageNet-1K:
     ```bash
-    python distillation/distillation_imgnet.py 
-        --exp-name distillation-imgnet-ipc50  
-        --syn-data-path ./syn_data/ 
-        --init-path ./distillation/init_images/imgnet/ 
-        --arch-name resnet18 
-        --batch-size 100 --lr 0.25 --iteration 2000 --r-bn 0.01 
-        --r-var 2 --steps 15 --rho 15e-3 
-        --store-best-images 
-        --ipc-start 0 --ipc-end 50 
+
     ```
 - **Evaluation**:
   
     Cifar:
     ```bash
-    python validation/validation_cifar.py 
-          --epochs 400 --batch-size 128 --ipc 10 
-          --syn-data-path ./syn_data/distillation-c100-ipc50 
-          --output-dir ./syn_data/validation-c100-ipc50 
-          --networks resnet18 --dataset cifar100 
+    # validation with static labeling
+    python ufc_validation/val_static.py \
+        --epochs 400 --batch-size 64 --ipc 10 \
+        --syn-data-path syn/cifar100-ipc10/generated_results \
+        --output-dir syn/cifar100-ipc10/generated_results \
+        --wandb-name cifar100-ipc10 \
+        --dataset cifar100 --networks resnet18
+    
+    # validation with dynamic labeling
+    python ufc_validation/val_dyn.py \
+        --epochs 80 --batch-size 64 --ipc 10 \
+        --syn-data-path syn/cifar100-ipc10/generated_results\
+        --output-dir syn/cifar100-ipc10 \
+        --wandb-name cifar100-ipc10 \
+        --dataset cifar100 --networks resnet18
     ```
-    Tiny-ImageNet:
-    ```bash
-    python validation/validation_tiny.py 
-            --epochs 200 --batch-size 64 --ipc 50 
-            --lr 0.2 --momentum 0.9 --weight-decay 1e-4 
-            --lr-scheduler cosineannealinglr 
-            --lr-warmup-epochs 5 
-            --lr-warmup-method linear 
-            --lr-warmup-decay 0.01
-            --data-path ./data/tiny/
-            --syn-data-path ./syn_data/distillation-tiny-ipc50/ 
-            --model resnet18   
-    ```
-    ImageNet-1K:
-    ```bash
-    python validation/validation_imgnet.py 
-        --epochs 300 --batch-size 128 --ipc 50 
-        --mix-type cutmix 
-        --cos -T 20 -j 4 
-        --train-dir ./syn_data/distillation-imgnet-ipc50 
-        --output-dir ./syn_data/validation-imgnet-ipc50 
-        --val-dir ./data/Imagenet-1k/val 
-        --teacher-model resnet18 
-        --model resnet18 
-    ```
+
 we also provide the `.sh` script in the `scripts` directory.
 
 ---
