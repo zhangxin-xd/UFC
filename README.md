@@ -112,8 +112,8 @@ we also provide the `.sh` script in the `scripts` directory.
 
 Our experiments demonstrate the effectiveness of the proposed approach across various benchmarks. 
 
-![Results](imgs/results1.png){ width=500 }
-![Results](imgs/results2.png)
+<img src="imgs/results1.png" alt="Results" width="500"/>
+<img src="imgs/results2.png" alt="Results" width="500"/>
 
 For detailed experimental results and further analysis, please refer to the full paper.
 
