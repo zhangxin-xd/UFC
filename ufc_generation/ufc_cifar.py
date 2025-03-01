@@ -198,8 +198,6 @@ def get_args():
     parser.add_argument("--M", default=4, type=int, help="Number of architectures involved in UFC generation")
     parser.add_argument("--init_path", type=str, default="",
                         help="Path to the initial synthetic data")
-    parser.add_argument("--init_part_num", type=int, default=25,
-                        help="Number of parts for initialization")
     parser.add_argument("--ipc", type=int, default=10,
                         help="IPC (images per class) setting")
     # Data saving parameters
