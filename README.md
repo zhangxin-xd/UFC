@@ -1,4 +1,4 @@
-# 🌟 Breaking Class Barriers: \\Efficient Dataset Distillation \\via Inter-Class Feature Compensator
+# 🌟 Breaking Class Barriers: Efficient Dataset Distillation via Inter-Class Feature Compensator
 ## 🔥 ICLR 2025 Poster 🔥
 
 >[Breaking Class Barriers: \\Efficient Dataset Distillation via Inter-Class Feature Compensator](https://arxiv.org/abs/2408.06927).<br>
