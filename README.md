@@ -79,7 +79,7 @@ For ImageNet-1K, we use the pre-trained weights available in `torchvision`.  For
         --dataset cifar100 --networks resnet18
     ```
 
-we also provide the `.sh` script in the `scripts` directory.
+we also provide the `.sh` script in the `sh` directory.
 
 ---
 
