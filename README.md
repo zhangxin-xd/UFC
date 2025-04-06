@@ -71,7 +71,8 @@ Here’s how to use this code for UFC generation and validation:
         --dataset cifar100 --networks resnet18
     ```
     
-  validation with dynamic labeling <\br>
+  validation with dynamic labeling
+  
   Note: the number of training epochs is reduced by a factor of 1/(M + 1).
   ```bash
     python ufc_validation/val_dyn.py \
